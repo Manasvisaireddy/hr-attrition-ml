@@ -83,27 +83,3 @@ pip install imbalanced-learn boruta pytorch-tabnet joblib
 
 Download IBM dataset from Kaggle -> place in /data folder -> run notebooks in order.
 
-## Interview Talking Points
-
-**Q: Why is OOF AUC 0.77 but some notebooks show 0.88?**
-> The 0.88 was measured on training data - the model memorised the data.
-> 0.77 is the honest number from 10-fold cross-validation where each
-> prediction was made on data the model never saw during training.
-
-**Q: Why does cross-dataset AUC drop to 0.63?**
-> External datasets share only proxy features with IBM - no direct salary
-> or satisfaction columns. 0.63 above random (0.50) confirms the universal
-> attrition signal in tenure and overtime features transfers across industries.
-
-**Q: Why class_weight instead of SMOTE?**
-> SMOTE creates synthetic minority samples that can leak between train and
-> validation folds in cross-validation, inflating CV AUC artificially.
-> class_weight handles imbalance natively without generating fake data.
-
-## Resume Bullet
-
-Built end-to-end employee attrition prediction pipeline - two-stage Boruta+RFECV
-feature selection (33->7 features), Optuna-tuned blending ensemble (LightGBM +
-GradientBoosting + RandomForest), isotonic calibration, SHAP explainability,
-and business cost-optimized threshold. OOF AUC 0.77 validated across 3 industries
-(22K+ external employees) without retraining.
