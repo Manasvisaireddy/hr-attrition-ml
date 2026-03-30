@@ -1,0 +1,16 @@
+# Data - download from Kaggle separately
+data/
+*.db
+
+# Large model files
+outputs/improved/*.pkl
+outputs/*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

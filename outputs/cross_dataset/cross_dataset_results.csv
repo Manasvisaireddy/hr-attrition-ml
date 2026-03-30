@@ -1,0 +1,5 @@
+Dataset,Rows,Attrition Rate,LGBM AUC,GB AUC,RF AUC,Blend AUC,High Risk %,Medium Risk %,Low Risk %
+IBM (training data),1470,0.161,0.8427,0.8391,0.8993,0.8728,8.4,35.7,55.9
+HR Analytics (14K),14999,0.238,0.6278,0.5824,0.6436,0.6336,0.0,40.6,59.4
+MFG Resignations,6284,0.061,0.6942,0.6887,0.6532,0.6637,0.0,5.8,94.2
+MFG Any Termination,6284,0.236,0.4812,0.438,0.5358,0.5003,0.0,5.8,94.2

@@ -1,0 +1,5 @@
+,AUC
+Stacking Ensemble,0.996
+LightGBM,0.8276
+GradientBoosting,0.8232
+RandomForest,0.8065

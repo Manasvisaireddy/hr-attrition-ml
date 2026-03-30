@@ -1,0 +1,7 @@
+Model,AUC,Evaluation,SMOTE
+Notebook 04 — OOF blend (old),0.7744,5-fold OOF,Yes
+Notebook 06 — GradBoost (fixed),0.7728089357027728,10-fold OOF,No
+Notebook 06 — Blend (fixed),0.7711937198216418,10-fold OOF,No
+Notebook 06 — LightGBM (fixed),0.7677545419391487,10-fold OOF,No
+Notebook 06 — RandomForest (fixed),0.7670769725652844,10-fold OOF,No
+Notebook 05 — Holdout (old),0.66,Single holdout,Yes
